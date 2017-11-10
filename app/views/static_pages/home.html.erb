@@ -1,2 +1,7 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, (t ".home") ) %>
+<h1><%= t ".str4" %></h1>
+<p>
+  <%= t ".str1" %>
+  <a href="http://www.railstutorial.org/"><%= t ".str2" %></a>
+  <%= t ".str3" %>
+</p>

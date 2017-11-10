@@ -1,0 +1,14 @@
+<% provide(:title, (t ".title")) %>
+<h1><%= t ".title"%></h1>
+<p>
+  <%= t(".strfull1",
+    str1: link_to(t(".str1"), "http://www.railstutorial.org"),
+    str2: link_to(t(".str2"), "http://www.railstutorial.org/book"),
+    str3: link_to(t(".str3"), "http://screencasts.railstutorial.org/")).html_safe
+  %>
+  <%= t".str4" %>
+  <%= t(".str5",
+    str5: link_to(t(".str5"), "http://rubyonrails.org/")).html_safe
+  %>
+  <%= t ".str6" %>
+</p>
