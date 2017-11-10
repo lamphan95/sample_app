@@ -31,3 +31,37 @@
 
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      head: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    layout:
+      head: "Ruby on Rails Tutorial Sample App"
+    home:
+      home: "Home"
+      str1: "This is the home page for the"
+      str2: "Ruby on Rails Tutorial"
+      str3: "sample application."
+      str4: "Sample App"
+    about:
+      title: "About"
+      str1: "Ruby on Rails Tutorial"
+      str2: "book"
+      str3: "screencast series"
+      str4: "to teach web development with"
+      str5: "Ruby on Rails"
+      strfull1: >
+       The <em>%{str1}</em> is a %{str2} and %{str3}
+      str6: "This is the sample application for the tutorial."
+    contact:
+      title: "Contact"
+      str1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      str2: "contact page"
+    help:
+      title: "Help"
+      str1: "Get help on the Ruby on Rails Tutorial at the"
+      str2: "Rails Tutorial help section"
+      str3: "To get help on this sample app, see the"
+      str4: "Ruby on Rails Tutorial"
+      str5: "book"
+
