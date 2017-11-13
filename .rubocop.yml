@@ -236,9 +236,6 @@ Layout/EmptyLinesAroundModuleBody:
 
 # Checks whether the source file has a utf-8 encoding comment or not
 
-<<<<<<< e53e0eeb00591be3bd7c776f3f6b616ee589f079
-=======
-
 Naming/FileName:
   Exclude:
     - '**/Rakefile'
