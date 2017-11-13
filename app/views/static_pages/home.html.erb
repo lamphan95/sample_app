@@ -1,7 +1,11 @@
-<% provide(:title, (t ".home") ) %>
-<h1><%= t ".str4" %></h1>
-<p>
-  <%= t ".str1" %>
-  <a href="http://www.railstutorial.org/"><%= t ".str2" %></a>
-  <%= t ".str3" %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t".str4" %></h1>
+  <h2>
+    <%= t ".str1" %>
+    <a href="http://www.railstutorial.org/"><%= t ".str2" %></a>
+    <%= t ".str3" %>
+  </h2>
+  <%= link_to t(".btn"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<img alt="Rails logo" src="/assets/rails.png" />
+
