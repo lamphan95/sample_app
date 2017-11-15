@@ -1,0 +1,8 @@
+name:
+  maximum_length: 50
+email:
+  maximum_length: 255
+password:
+  minimum_length: 6
+Gravatar:
+    size: 80
