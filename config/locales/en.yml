@@ -38,7 +38,12 @@ en:
       logo: "Sample App"
       home: "Home"
       help: "Help"
-      log: "Log in"
+      login: "Log in"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      acc: "Account"
+      users: "Users"
     footer:
       book_title: "Ruby on Rails Tutorial"
       author: "Michael Hartl"
@@ -53,7 +58,7 @@ en:
       str1: "This is the home page for the"
       str2: "Ruby on Rails Tutorial"
       str3: "sample application."
-      str4: "Welcome to the Sample App"
+      str4: "Welcome to the Sample App!"
       btn: "Sign up now!"
     about:
       title: "About"
@@ -78,6 +83,16 @@ en:
       str5: "book"
   users:
     new:
-      title: "Users#new"
-      str1: "Find me in app/views/users/new.html.erb"
+      title: "Sign up"
+      str1: "Confirmation"
+      btnCreate: "Create my account"
+    show:
+      error_message: "Not Found User"
+  sessions:
+    new:
+      head: "Log in"
+      btnSignUp: "Sign up now!"
+      str1: "New user?"
+    create:
+      errorLogin: "Invalid email/password combination"
 
