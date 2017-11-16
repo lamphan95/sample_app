@@ -53,7 +53,7 @@ en:
       str1: "This is the home page for the"
       str2: "Ruby on Rails Tutorial"
       str3: "sample application."
-      str4: "Welcome to the Sample App"
+      str4: "Welcome to the Sample App!"
       btn: "Sign up now!"
     about:
       title: "About"
@@ -78,6 +78,9 @@ en:
       str5: "book"
   users:
     new:
-      title: "Users#new"
-      str1: "Find me in app/views/users/new.html.erb"
+      title: "Sign up"
+      str1: "Confirmation"
+      btnCreate: "Create my account"
+    show:
+      error_message: "Not Found User"
 
