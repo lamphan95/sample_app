@@ -5,4 +5,6 @@ email:
 password:
   minimum_length: 6
 Gravatar:
-    size: 80
+  size: 80
+sessions_hepler:
+  remember: "1"
