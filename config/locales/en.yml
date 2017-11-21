@@ -38,7 +38,12 @@ en:
       logo: "Sample App"
       home: "Home"
       help: "Help"
-      log: "Log in"
+      login: "Log in"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      acc: "Account"
+      users: "Users"
     footer:
       book_title: "Ruby on Rails Tutorial"
       author: "Michael Hartl"
@@ -83,4 +88,11 @@ en:
       btnCreate: "Create my account"
     show:
       error_message: "Not Found User"
+  sessions:
+    new:
+      head: "Log in"
+      btnSignUp: "Sign up now!"
+      str1: "New user?"
+    create:
+      errorLogin: "Invalid email/password combination"
 
