@@ -10,3 +10,5 @@ sessions_hepler:
   remember: "1"
 index:
   size: 50
+sessions_helper:
+  remember: "1"

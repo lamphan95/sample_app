@@ -8,7 +8,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: user_id
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by id: user_id
-      if user && user.authenticated?(cookies[:remember_token])
+      if user && user.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -37,10 +37,15 @@ module SessionsHelper
     cookies.delete :remember_token
   end
 
-  def login_success user
+  def login_success_activated user
     log_in user
-    params[:session][:remember_me] == Settings.sessions_hepler.remember ? remember(user) : forget(user)
+    params[:session][:remember_me] == Settings.sessions_helper.remember ? remember(user) : forget(user)
     redirect_back_or user
+  end
+
+  def login_success_not_activated
+    flash[:warning] = I18n.t "sessions.helper.message"
+    redirect_to root_url
   end
 
   def login_fail

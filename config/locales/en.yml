@@ -105,6 +105,8 @@ en:
       fail: "User not deleted"
     helper:
       not_login: "Please log in."
+    create:
+      notice: "Please check your email to activate your account."
   sessions:
     new:
       head: "Log in"
@@ -113,3 +115,25 @@ en:
       remember: "Remember me on this computer"
     create:
       errorLogin: "Invalid email/password combination"
+    helper:
+      message: "Account not activated. Check your email for the activation link."
+  active:
+    edit:
+      success: "Account activated!"
+      fail: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      introduce: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+      hi: "Hi"
+      head: "Sample App"
+    password_reset:
+      head: "User#password_reset"
+  mailers:
+    user_mailer:
+      account_activation:
+        subject: "Account activation"
+      password_reset:
+        hi: "Hi"
+
+
