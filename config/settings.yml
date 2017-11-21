@@ -6,9 +6,8 @@ password:
   minimum_length: 6
 Gravatar:
   size: 80
-sessions_hepler:
+sessions_helper:
   remember: "1"
 index:
   size: 50
-sessions_helper:
-  remember: "1"
+password_reset_expired: 2
