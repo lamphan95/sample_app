@@ -93,6 +93,7 @@ en:
       head: "Log in"
       btnSignUp: "Sign up now!"
       str1: "New user?"
+      remember: "Remember me on this computer"
     create:
       errorLogin: "Invalid email/password combination"
 

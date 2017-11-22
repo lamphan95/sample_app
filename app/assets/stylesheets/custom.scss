@@ -4,10 +4,10 @@
 
 $gray-medium-light: #eaeaea;
 $light-gray: #777;
-$Davy's-Grey: #555;
+$Davy-Grey: #555;
 $White: #fff;
 $Dark: #222;
-$Gray: $Gray;
+$Gray: #bbb;
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
@@ -88,7 +88,7 @@ footer {
 }
 
 footer a {
-  color: $Davy's-Grey;
+  color: $Davy-Grey;
 }
 
 footer a:hover {
@@ -182,4 +182,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
