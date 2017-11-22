@@ -8,3 +8,5 @@ Gravatar:
   size: 80
 sessions_hepler:
   remember: "1"
+index:
+  size: 50

@@ -40,11 +40,24 @@ module SessionsHelper
   def login_success user
     log_in user
     params[:session][:remember_me] == Settings.sessions_hepler.remember ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def login_fail
     flash.now[:danger] = I18n.t ".sessions.create.errorLogin"
     render :new
+  end
+
+  def current_user? user
+    user == current_user
+  end
+
+  def redirect_back_or default
+    redirect_to session[:forwarding_url] || default
+    session.delete :forwarding_url
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 end
