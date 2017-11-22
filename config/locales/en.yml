@@ -44,6 +44,7 @@ en:
       logout: "Log out"
       acc: "Account"
       users: "Users"
+
     footer:
       book_title: "Ruby on Rails Tutorial"
       author: "Michael Hartl"
@@ -88,6 +89,22 @@ en:
       btnCreate: "Create my account"
     show:
       error_message: "Not Found User"
+    edit:
+      title: "Edit user"
+      btnSave: "Save changes"
+      btnchange: "change"
+      str1: "Update your profile"
+    index:
+      title: "All users"
+      del: "delete"
+      confirm: "You Sure?"
+    update:
+      success: "Profile updated"
+    destroy:
+      success: "User deleted"
+      fail: "User not deleted"
+    helper:
+      not_login: "Please log in."
   sessions:
     new:
       head: "Log in"
@@ -96,4 +113,3 @@ en:
       remember: "Remember me on this computer"
     create:
       errorLogin: "Invalid email/password combination"
-
