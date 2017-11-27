@@ -1,17 +1,13 @@
 class StaticPagesController < ApplicationController
   def home
-    # return Home
+    return unless logged_in?
+    @micropost  = current_user.microposts.build
+    @feed_items = current_user.feed.paginate page: params[:page], per_page: Settings.static_pages.paginate_page
   end
 
-  def help
-    # return Help
-  end
+  def help; end
 
-  def about
-    # return About
-  end
+  def about; end
 
-  def contact
-    # return contact
-  end
+  def contact; end
 end

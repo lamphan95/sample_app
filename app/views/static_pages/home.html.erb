@@ -1,11 +1,28 @@
-<% provide :title, t(".home") %>
-<div class="center jumbotron">
-  <h1><%= t ".str4" %></h1>
-  <h2>
-    <%= t ".str1" %>
-    <a href="http://www.railstutorial.org/"><%= t ".str2" %></a>
-    <%= t ".str3" %>
-  </h2>
-  <%= link_to t(".btn"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<img alt="Rails logo" src="/assets/rails.png" />
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".micropost_feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <% provide :title, t(".home") %>
+  <div class="center jumbotron">
+    <h1><%= t ".str4" %></h1>
+    <h2>
+      <%= t ".str1" %>
+      <a href="http://www.railstutorial.org/"><%= t ".str2" %></a>
+      <%= t ".str3" %>
+    </h2>
+    <%= link_to t(".btn"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <img alt= t(".alt_logo") src="/assets/rails.png" />
+<% end %>

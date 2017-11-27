@@ -6,8 +6,17 @@ password:
   minimum_length: 6
 Gravatar:
   size: 80
+  size_in_home: 50
 sessions_helper:
   remember: "1"
 index:
   size: 50
 password_reset_expired: 2
+content_micropost:
+  maximum_length: 140
+micropost:
+  picture_size: 5
+  picture_accept: "image/jpeg,image/gif,image/png"
+static_pages:
+  paginate_page: 5
+

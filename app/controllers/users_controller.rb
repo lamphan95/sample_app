@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
   before_action :find_user, only: %i(show destroy)
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page]
+  end
 
   def new
     @user = User.new
@@ -50,13 +52,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = I18n.t ".users.helper.not_login"
-    redirect_to login_path
   end
 
   def correct_user

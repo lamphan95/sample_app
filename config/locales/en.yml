@@ -61,6 +61,8 @@ en:
       str3: "sample application."
       str4: "Welcome to the Sample App!"
       btn: "Sign up now!"
+      micropost_feed: "Micropost Feed"
+      alt_logo: "Rails logo"
     about:
       title: "About"
       str1: "Ruby on Rails Tutorial"
@@ -89,6 +91,7 @@ en:
       btnCreate: "Create my account"
     show:
       error_message: "Not Found User"
+      microposts: "Microposts"
     edit:
       title: "Edit user"
       btnSave: "Save changes"
@@ -155,4 +158,24 @@ en:
     edit:
       head: "Reset password"
       btnUpdate: "Update password"
+  microposts:
+    micropost:
+      you_sure: "You sure?"
+      del: "delete"
+      ago: " ago."
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
+      fail: "Error deleted!"
+    model:
+      picture_error: "should be less than 5MB"
+  shared:
+    micropost_form:
+      placeholder_content: "Compose new micropost..."
+      btnSubmit: "Post"
+      alert_size: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      profile: "view my profile"
+      micropost: "micropost"
 
