@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(create new show)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  before_action :find_user, only: %i(show destroy)
+  before_action :find_user, only: %i(show destroy following followers)
 
   def show
     @microposts = @user.microposts.paginate page: params[:page]
@@ -45,6 +45,18 @@ class UsersController < ApplicationController
       flash[:danger] = I18n.t ".users.destroy.fail"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = I18n.t ".users.following.title"
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = I18n.t ".users.followers.title"
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
   end
 
   private

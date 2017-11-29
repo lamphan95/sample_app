@@ -110,6 +110,19 @@ en:
       not_login: "Please log in."
     create:
       notice: "Please check your email to activate your account."
+    follow:
+      follow: "Follow"
+      follower: "followers"
+      following: "following"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      profile: "view my profile"
+      micropost: "Microposts:"
+    following:
+      title: "following"
+    followers:
+      title: "followers"
   sessions:
     new:
       head: "Log in"
@@ -178,4 +191,9 @@ en:
     user_info:
       profile: "view my profile"
       micropost: "micropost"
-
+    stats:
+      follower: "followers"
+      following: "following"
+  relationship:
+    create:
+      fail: "User Not Found"
